@@ -1,0 +1,45 @@
+Tarefa 1 : Encher uma bacia de água.
+
+Passo 1 Encontrar uma bacia 
+Passo 2 Encontrar uma torneira que tenha água disponivel
+Passo 3 Colocar a bacia no chão de uma forma que ela consiga ser preenchida pela água
+Passo 4 Ligar a torneira. 
+Passo 5 Apos a bacia estar parcialmente cheia ou quase cheia, desligue a torneira para que ela não despeje
+Passo 6 Jogue a água em si mesmo e se auto destrua.
+
+Tarefa 2 : Trocar um pneu de um carro.
+
+Passo 1 encontre o pneu que precisa de assistência 
+Passo 2 pegue um step que se está no porta malas juntamente com um macaco, chave de roda e um triangulo de advertência
+Passo 3 caso esteja em uma via movimentada coloque o triangulo em uma distancia seguindo as normas de segurança do transito brasileiro
+Passo 4 coloque o macaco no chassi do carro para que consiga ser elevar e trocar o pneu
+Passo 5 Erga o carro usando o macaco 
+Passo 6 Use a chave de roda para desparafusar o pneu do carro 
+Passo 7 Retire o pneu do carro
+Passo 8 Coloque o step em reposição 
+Passo 9 Use a chave de roda para parafusar o pneu do carro 
+Passo 10 Após a roda estar parafusada, retire o macaco
+Passo 11 Pegue o triangulo de advertencia e coloque no porta malas
+Passo 12 Coloque pneu que está danificado no porta malas juntamente com o macaco e o triangulo
+Passo 13 Ligue o carro e dirija
+
+Tarefa 3 : Calcular a idade de alguém daqui a 20 anos.
+
+Passo 1 Calcule a Idade da Gabriela que atualmente tem 16 anos de idade 
+Passo 2 Faça uma conta de adição básica
+Passo 3 Some 16 + 20
+Passo 4 Obtenha o resultado de 36 anos
+Passo 5 Avise ela que ela envelheceu
+
+Tarefa 4 : Trocar uma lâmpada de casa 
+
+Passo 1 Encontre uma lâmpada comum e uma escada 
+Passo 2 Encontre a lâmpada que está falhando
+Passo 3 Posicione a escada para que consiga acessar a lâmpada velha
+Passo 4 Após isso suba a escada e desrosqueie a lâmpada velha
+Passo 5 Desça da escada
+Passo 6 Descarte adequadamente a lâmpada velha
+Passo 7 Pegue sua lâmpada nova
+Passo 8 Suba a escada novamente e rosqueie sua lâmpada nova
+Passo 9 Desça da escada e guarde a escada 
+Passo 10 Ligue a lâmpada e veja se ela está funcionando adequadamente 

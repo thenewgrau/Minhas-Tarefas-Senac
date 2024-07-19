@@ -1,0 +1,13 @@
+algoritmo
+ declare A, B inteiro
+ 
+ a <- 40
+ b <- 20
+ 
+ se a > b 
+ entao
+    escreva "A é maior que B"
+ 
+ se a < b 
+    escreva "A é menor que B"
+fim algoritmo

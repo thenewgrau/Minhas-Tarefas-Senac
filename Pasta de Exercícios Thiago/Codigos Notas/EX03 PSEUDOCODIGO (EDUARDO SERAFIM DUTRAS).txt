@@ -1,0 +1,8 @@
+algoritmo
+ declare x, y, z Real
+ x <- 8
+ y <- 10
+
+ z <- x * y 
+ escreva z 
+fim_algoritmo

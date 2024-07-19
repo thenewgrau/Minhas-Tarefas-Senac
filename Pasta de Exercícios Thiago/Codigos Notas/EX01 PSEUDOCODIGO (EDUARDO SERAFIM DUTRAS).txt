@@ -1,0 +1,7 @@
+algoritmo
+ declare N1, N2,res inteiro 
+ n1 <- 7
+ n2 <- 8
+ res <- N1 + N2
+ escreva res
+fim_algoritmo

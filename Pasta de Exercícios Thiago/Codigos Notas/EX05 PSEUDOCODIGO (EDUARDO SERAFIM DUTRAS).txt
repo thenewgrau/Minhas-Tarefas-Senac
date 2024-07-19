@@ -1,0 +1,7 @@
+algoritmo
+ declare nome caractere
+ 
+  escreva "digite seu nome"
+  leia (nome)
+  escreva "o nome digitado foi : ", nome
+fim_algoritmo

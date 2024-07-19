@@ -1,0 +1,11 @@
+algoritmo
+ declare N1, N2, res Inteiro 
+
+ escreva "digite um número"
+ leia (N1)
+ escreva "digite o segundo número"
+ leia (N2)
+
+ res <- N1 * N2
+ escreva "o resultado é res : ",res
+fim_algoritmo

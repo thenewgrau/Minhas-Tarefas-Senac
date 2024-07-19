@@ -1,0 +1,11 @@
+algoritmo
+ descreva chuva logico
+ 
+ chuva <- falso
+ 
+ se chuva <- verdadeiro
+   descreva "pegue um guarda chuva"
+
+ se nao
+   descreva "tchau, brigado"
+fim_algoritmo

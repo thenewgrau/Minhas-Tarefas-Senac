@@ -1,0 +1,9 @@
+algoritmo 
+       declare x, y, z REAL
+       x <- 7 
+       y <- 8
+ 
+       z <- x / y
+       escreva z
+
+fim_algoritmo
