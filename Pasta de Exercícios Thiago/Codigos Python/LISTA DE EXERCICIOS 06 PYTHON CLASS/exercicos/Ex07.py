@@ -1,19 +1,19 @@
 class Triangulo:
-    def __init__(self,la,lb,lc):
-        self.ladoA = la
-        self.ladoB = lb
-        self.ladoC = lc
+    def __init__(self,lA,lB,lC):
+        self.ladoA = lA
+        self.ladoB = lB
+        self.ladoC = lC
 
-    def calcPerimetro(self):
-        perimetro = self.ladoA + self.ladoB + self.ladoC
-        print(f"Perímetro: {perimetro}")
+    def calcularPerimetro(self):
+        soma = self.ladoA + self.ladoB + self.ladoC
+        print(f"Perímetro: {soma}")
 
-    def getMlado(self):
+    def getMaiorLado(self):
         if self.ladoA > self.ladoB:
-            print("O maior lado é A")
-        
-        elif self.ladoB < self.ladoC:
-            print("O maior lado é C")
+            print(f"Maior lado: A \nValor: {self.ladoA}")
+
+        elif self.ladoB > self.ladoC:
+            print(f"Maior lado: B \nValor: {self.ladoB}")
 
         else:
-            print("O maior lado é B")
+            print(f"Maior lado: C \nValor: {self.ladoC}")

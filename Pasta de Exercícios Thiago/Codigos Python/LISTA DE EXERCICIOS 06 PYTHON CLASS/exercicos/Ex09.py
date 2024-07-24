@@ -26,10 +26,10 @@ class Carro:
             print("Quanto de nivel deseja abastecer ?")
             qnt = int(input())
             self.nivel = self.nivel + qnt
-            print(f"Agora está com o nivel de {self.nivel}")
+            print(f"Agora está com o nivel de combustivel {self.nivel} L")
 
         else:
-            print(f"Continua com o nivel de {self.nivel}")
+            print(f"Continua com o nivel {self.nivel} L")
 
     def Andar(self):
         print("Deseja andar ?[sim][nao]")
@@ -39,7 +39,7 @@ class Carro:
             print("Quanto deseja andar ?")
             km = int(input())
             gasto = km / self.nivel 
-            print(f"Você andou {km} km e gastou {gasto}")
+            print(f"Você andou {km} km e gastou {gasto:.2f} L")
 
     def calcularImposto(self):
         ipva = self.valor * 2.5

@@ -16,11 +16,13 @@ class Nf:
         print("Digite o número")
         num = int(input())
         self.numero = num
+        print("-"*90)
 
     def obterDataEmissao(self):
         print("Digite a data")
         data = str(input())
         self.data = data
+        print("-"*90)
 
     def setalterarRazaoSocial(self):
         print(f"Atual: {self.razaosocial}")
@@ -28,13 +30,15 @@ class Nf:
         razaosocialfoda = str(input())
         self.razaosocial = razaosocialfoda
         print(f"Nova: {self.razaosocial}")
+        print("-"*90)
 
     def calcularValorTotal(self):
-        impostos = self.icms + self.ipi
+        impostos = self.icms + self.ipi / 100
         valortotals = (self.valorproduto + self.frete)
         self.valortotal =  valortotals * impostos
         self.valortotal = self.valortotal + valortotals
         print(f"Valor total: {self.valortotal}")
+        print("-"*90)
 
     def notinhaFiscal(self):
         print('Número:',self.numero)
@@ -44,7 +48,8 @@ class Nf:
         print(f"Razão Social: {self.razaosocial}")
         print(f"Data: {self.data}")
         print(f"Valor do produto: R${self.valorproduto}")
-        print(f"ICMS: {self.icms}")
+        print(f"ICMS: {self.icms} %")
         print(f"Frete: {self.frete}")
-        print(f"IPI: {self.ipi}")
+        print(f"IPI: {self.ipi} %")
         print(f"Valortotal: {self.valortotal}")
+        print("-"*90)
