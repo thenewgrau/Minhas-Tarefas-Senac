@@ -9,5 +9,6 @@ class CarrinhodeCompras:
         for prod in self.produtos:
             print(f'{prod.nome} \nPreço R${prod.preco:.2f}')
 
-    def getSoma(self):
-        total = 
+    def getSoma(self, prod):
+        for i in self.produtos:
+            total += prod.preco

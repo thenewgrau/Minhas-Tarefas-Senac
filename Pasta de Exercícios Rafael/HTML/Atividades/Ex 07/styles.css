@@ -1,0 +1,228 @@
+body{
+    margin: 0%;
+    background-color: #e9e9e9;
+}
+
+:root{
+    --tamanhow: 250px;
+    --tamanhoh: 200px;
+
+}
+
+.container{
+    display: flex;
+
+}
+
+.awa{
+    height: 70px;
+
+}
+
+.quadrado1{
+    display: flex;
+    width: 800px;
+    background-color: black;
+    height: 70px;
+}
+
+.quadrado2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    align-items: center;
+
+}
+
+.adorofesta{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.container,.container2,.container3,.adorofesta,.festival,.falatorio,.maisfalatorio{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.box3{
+    margin: 100px;
+    padding: 30px;
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    
+}
+
+.logo{
+    margin-left: 100px;
+    width: 320px;
+    
+}
+
+.container3{
+    margin: 100px;
+    gap: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.boxcaixa{
+    width: 250px;
+    height: 500px;
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    justify-content: center;
+
+}
+
+.pais{
+    display: flex;
+    justify-content: center;
+
+}
+
+.descr{
+    display: flex;
+    padding: 10px;
+    margin-left: 0px;
+
+}
+
+.paiscomprar{
+    display: flex;
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 55px;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+
+}
+
+.feijao{
+    display: flex;
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+.containerfinal{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px;
+
+}
+
+.festival{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.caixa1{
+    background-color: darkgray;
+
+}
+
+.caixa2{
+    background-color: darkgray;
+
+}
+
+.caixa3{
+    background-color: darkgray;
+
+}
+
+.caixa4{
+    background-color: darkgray;
+
+}
+
+.falatorio{
+    display: flex;
+    justify-content: center;
+
+}
+
+.maisfalatorio{
+    display: flex;
+    margin: 0%;
+    padding: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+img{
+    width: var(--tamanhow);
+    height: var(--tamanhoh);   
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+@media (max-width: 666px){
+    .awa{
+        width: 150px;
+    }
+
+    .quadrado1{
+        width: 300px;
+    }
+
+    .quadrado2{
+        width: 350px;
+    }
+
+    p{
+        font-size: small;
+    }
+
+    .boxcaixa{
+        flex-wrap: nowrap;
+        width: 150px;
+        justify-content: center;
+
+    }
+
+    .paiscomprar{
+        margin-top: 50px;
+        margin-left: 35px;
+        width: 80px;
+        border-radius: 15px;
+
+    }
+
+    .festival{
+        margin-bottom: 50px;
+
+    }
+
+    img{
+        height: 150px;
+        width: 150px;
+    }
+}

@@ -1,0 +1,26 @@
+Você conhece o que é banco de dados?
+-  Um banco de dados é uma coleção de dados estruturados e organizados, que podem ser armazenados eletronicamente em um sistema de computador. O objetivo é facilitar o acesso e a gestão dos dados, que podem ser de qualquer tipo, como palavras, números, imagens, vídeos e arquivos. 
+  Os bancos de dados são essenciais para o crescimento de uma empresa, pois permitem: 
+ 	Manter um histórico atualizado das transações realizadas 
+ 	Analisar os dados para criar insights e estratégias de desenvolvimento 
+ 	Auxiliar na tomada de decisões estratégicas.
+
+  Para ajudar a manter os dados organizados, acessíveis e protegidos, é possível utilizar um sistema de gerenciamento de banco de dados (DBMS), que inclui uma camada de ferramentas de gerenciamento. 
+Alguns dos elementos que compõem um banco de dados são:
+Tabelas;
+ 	Colunas; 
+ 	Linhas; 
+	Chaves primárias; 
+	Chaves estrangeiras; 
+	Índices; 
+	Visões; 	
+	Procedures; 
+	Triggers; 
+	Transações; 
+
+
+E um banco de dados relacional?
+Vamos descobrir juntos o que essas palavras significam!
+Junte-se com mais 3 colegas (formem um quarteto fantástico) e pesquisem o que é um banco de dados, o que um banco de dados relacional e um não relacional.
+Crie uma apresentação explicando esses três tópicos e adicione a sua apresentação 3 linguagens relacionadas a SQL, como : MariaDB, MySql e etc, explique também a diferença entre elas.
+Faça uma apresentação dinâmica e interessante de até 20 minutos :)

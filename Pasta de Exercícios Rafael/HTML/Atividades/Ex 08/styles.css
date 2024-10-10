@@ -1,0 +1,227 @@
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+:root{
+    --tamanhow: 100px;
+    --tamanhoh: 100px;
+}
+
+.container{
+    display: flex;
+    height: 300px;
+}
+
+.Titulo{
+    display: flex;
+    background-color: #C0C0C0;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Subtitulos{
+    display: flex;
+    background-color: #C0C0C0;
+    flex-direction: column;
+    width: 300px;
+    height: 940px;
+    gap: 20px;
+    align-items: left;
+
+}
+
+.sub{
+    margin-left: 40px;
+    font-weight: 700;
+
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+
+}
+
+.Tabela{
+    display: grid;
+    grid-template-columns: 120px 170px 2    00px 200px;
+    grid-template-rows: 50px repeat(5, 300px);
+    align-items: center;
+    font-weight: 700;
+
+}
+
+.agua{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+
+}
+
+.foto1,.foto2,.foto3,.foto4,.foto5{
+    width: var(--tamanhow);
+    height: var(--tamanhoh);
+
+}
+
+.foto1{
+    grid-row: 2;
+}
+
+.foto2{
+    grid-row: 3;
+}
+
+.foto3{
+    grid-row: 4;
+}
+
+.foto4{
+    grid-row: 5;
+}
+
+.foto5{
+    grid-row: 6;
+}
+
+.nome1{
+    grid-row: 2;
+}
+
+.nome2{
+    grid-row: 3;
+}
+
+.nome3{
+    grid-row: 4;
+}
+
+.nome4{
+    grid-row: 5;
+}
+
+.nome5{
+    grid-row: 6;
+}
+
+.descr1{
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-row: 2;
+}
+
+.descr2{
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-row: 3;
+}
+
+.descr3{
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-row: 4;
+}
+
+.descr4{
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-row: 5;
+}
+
+.descr5{
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-row: 6;
+}
+
+.preco1{
+    grid-row: 2;
+}
+
+.preco2{
+    grid-row: 3;
+}
+
+.preco3{
+    grid-row: 4;
+}
+
+.preco4{
+    grid-row: 5;
+}
+
+.preco5{
+    grid-row: 6;
+}
+
+@media (max-width: 666px){
+    .Titulo{
+        display: flex;
+        background-color: #C0C0C0;
+        width: 666px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .Subtitulos{
+        display: flex;
+        flex-direction: row;
+        background-color: #C0C0C0;
+        width: 666px;
+        height: 100px;
+        gap: 60px;
+        justify-content: center;
+    
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column; 
+
+    }
+
+    .sub{
+        display: flex;
+        margin: 0%;
+        font-weight: 700;
+        justify-content: center;
+        
+    }
+
+    .Titulo2{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .Tabela{
+        display: grid;
+        grid-template-columns: 160px 200px 200px 200px;
+        grid-template-rows: 50px repeat(5, 200px);
+        align-items: center;
+        font-weight: 700;
+    
+    }
+    
+    .agua{
+        display: flex;
+        justify-content: flex-start;    
+    }
+
+    .container2{
+        display: flex;
+        margin: 1%;
+    }
+
+
+}

@@ -1,0 +1,119 @@
+body{
+    margin: 0%;
+    background-color: #e9e9e9;
+
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(3,640px);
+    background-color: #d3d3d3;
+
+}
+
+.box{
+    display: grid;
+    width: 640px;
+    height: 100px;
+    background-color: #d3d3d3; 
+    
+}
+
+.box2{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    background-color: #d3d3d3;
+    margin-left: 200px;
+    grid-column: 3;
+    font-size: larger;
+    font: bold;    
+
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    justify-content: center;
+    margin-top: 150px;
+    gap:60px;
+    
+}
+
+.box3,.box4,.box5,.box6{
+    background-color: #F5F5F5;
+    width: 300px;
+    height: 600px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.box3:hover,.box4:hover,.box5:hover,.box6:hover{
+    transform: scale(1.1);
+
+}
+
+.logo{
+    display: grid;
+    margin-left: 50px;
+    align-items: center;
+
+}
+
+.context{
+    display: flex;
+    justify-content: center;
+}
+
+.descr{
+    display: flex;
+    margin: 3%;
+
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90EE90;
+    margin: 2%;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.botao:hover{
+    background-color: #6495ED;
+
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+
+p{
+    display: grid;
+    gap: 10px;
+    align-items: center;
+
+}
+
+h1,p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
