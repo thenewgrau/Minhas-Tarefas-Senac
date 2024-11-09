@@ -1,0 +1,37 @@
+.body{
+    margin: 0%;
+    background-color: black;
+
+}
+
+#botao{
+    background-image: linear-gradient(to bottom right, blue, purple);
+    font-family: "Noto Sans KR"; 
+    color: white;
+    margin-top: 200px;
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 15px;
+}
+
+.num{
+    font-size: 50px;
+}
+
+#falatorio{
+    margin: 0%;
+    font-size: 400px;
+
+}
+
+p{
+    color: white;;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
