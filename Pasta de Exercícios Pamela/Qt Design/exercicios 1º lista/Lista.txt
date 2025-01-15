@@ -1,0 +1,7 @@
+1. Crie um progama que peça para o usuário digitar o nome dele e exiba o nome digitado na tela.
+
+2. Escreva um programa que leia dois números inteiros e exiba a soma deles.
+
+3. Escreva um programa que receba três números e exiba o maior deles.
+
+4. Escreva um programa que receba 10 números inteiros e exiba o maior deles.
