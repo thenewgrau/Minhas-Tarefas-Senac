@@ -1,0 +1,17 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: white;
+    font-family: "Inter", serif;
+    margin-top: 20%;
+}
+
+
+#agua{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
