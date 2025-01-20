@@ -1,12 +1,15 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QAction
-from brocoNotas123 import Ui_MainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
+from aguaOxigenada import Ui_MainWindow 
 
 class EditorTexto(QMainWindow):
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
+        self.ui.setupUi(self)  
+
+
+        self.ui.pushButton.clicked.connect(self.mostrar_nome)
 
         self.ui.actionNovo.triggered.connect(self.novo_arquivo)
         self.ui.actionAbrir.triggered.connect(self.abrir_arquivo)
@@ -26,6 +29,11 @@ class EditorTexto(QMainWindow):
         if caminho:
             with open(caminho, 'w', encoding='utf-8') as f:
                 f.write(self.ui.textEdit.toPlainText())
+
+    def mostrar_nome(self):
+        nome = self.ui.textEdit.toPlainText() 
+        print(f"Nome digitado: {nome}") 
+        self.ui.labelFodastica.setText(f"Seu nome é {nome}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

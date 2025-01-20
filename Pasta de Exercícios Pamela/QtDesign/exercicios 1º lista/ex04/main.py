@@ -1,6 +1,6 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QAction
-from brocoNotas123 import Ui_MainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
+from aguaCorrente import Ui_MainWindow
 
 class EditorTexto(QMainWindow):
     def __init__(self):
@@ -8,12 +8,16 @@ class EditorTexto(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        self.ui.pushButton.clicked.connect(self.maior_numero)
+
         self.ui.actionNovo.triggered.connect(self.novo_arquivo)
         self.ui.actionAbrir.triggered.connect(self.abrir_arquivo)
         self.ui.actionSalvar.triggered.connect(self.salvar_arquivo)
+        self.ui.actionSair.triggered.connect(self.sair)
 
     def novo_arquivo(self):
-        self.ui.textEdit.clear()
+        self.ui.lineEdit.clear()
+        self.ui.label_2.clear()
 
     def abrir_arquivo(self):
         caminho = QFileDialog.getOpenFileName(self, "Abrir Arquivo", "", "Text Files (*.txt)")[0]
@@ -26,6 +30,24 @@ class EditorTexto(QMainWindow):
         if caminho:
             with open(caminho, 'w', encoding='utf-8') as f:
                 f.write(self.ui.textEdit.toPlainText())
+
+    def maior_numero(self):
+        try:
+            numeros = []
+
+            numero = int(self.ui.lineEdit.text())
+            numeros.append(numero)
+
+            self.ui.label_2.setText(str(numeros))
+
+            maior_numero = max(numeros)
+            self.ui.label_2.setText(str(maior_numero))
+
+        except ValueError:
+            self.ui.label_2.setText("Por favor, insira números válidos.")
+
+    def sair(self):
+        self.close()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
