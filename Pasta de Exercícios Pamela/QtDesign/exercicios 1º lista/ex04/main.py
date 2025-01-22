@@ -9,11 +9,14 @@ class EditorTexto(QMainWindow):
         self.ui.setupUi(self)
 
         self.ui.pushButton.clicked.connect(self.maior_numero)
+        self.ui.pushButton_2.clicked.connect(self.mostrar)
 
         self.ui.actionNovo.triggered.connect(self.novo_arquivo)
         self.ui.actionAbrir.triggered.connect(self.abrir_arquivo)
         self.ui.actionSalvar.triggered.connect(self.salvar_arquivo)
         self.ui.actionSair.triggered.connect(self.sair)
+
+        self.numeros = []
 
     def novo_arquivo(self):
         self.ui.lineEdit.clear()
@@ -33,18 +36,24 @@ class EditorTexto(QMainWindow):
 
     def maior_numero(self):
         try:
-            numeros = []
 
             numero = int(self.ui.lineEdit.text())
-            numeros.append(numero)
+            self.numeros.append(numero)
+            self.ui.lineEdit.clear()
 
-            self.ui.label_2.setText(str(numeros))
-
-            maior_numero = max(numeros)
-            self.ui.label_2.setText(str(maior_numero))
+            self.maior_numero = max(self.numeros)
 
         except ValueError:
             self.ui.label_2.setText("Por favor, insira números válidos.")
+
+    def mostrar(self):
+        try:
+
+            self.ui.label_2.setText(str(self.maior_numero))       
+
+        except ValueError:
+            self.ui.label_2.setText("Não há números ainda !!")
+
 
     def sair(self):
         self.close()
