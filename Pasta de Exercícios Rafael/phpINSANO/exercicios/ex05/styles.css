@@ -13,9 +13,21 @@ h1, input{
     font-family: "Inter", serif;
 }
 
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 100px;
+
+}
+
 #maratona{
-    margin-top: 30px;
-    width: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 30%;
 }
 
 #fechadura, #agua, #aguasClaras{
@@ -25,4 +37,9 @@ h1, input{
     justify-content: center;
     align-items: center;
 
+}
+
+#cimento{
+    border: none;
+    border-radius: 2%;
 }
