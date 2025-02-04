@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campos do Jordão</title>
+    <title>Castelho Ha Tim Bum</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="fechadura">
-        <form method="POST">
-            <h1> operacao </h1>
-            <input type="text" id="cimento"  name="operacao">
-            <h1>Valor</h1>
+        <form method="POST" id="formatura">
             <input type="number" id="cimento"  name='valorFoda'>
+            <select name="operacao" id="op">
+                <option value="soma">+</option>
+                <option value="subtracao">-</option>
+                <option value="divisao">/</option>
+                <option value="multiplicacao">*</option>
+            </select>
             <input type="number" id="cimento" name='valorFoda2'>
             <button id="maratona" type='submit'>ACEITO</button>
         </form>
@@ -56,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         echo $print;
     }
     else if($tipo == "multiplicação" || $tipo == "MULTIPLICAÇÃO" || $tipo == "multiplicacao" || $tipo =="MULTIPLICACAO"){
-        $valorfinar = $valor / $valor2;
+        $valorfinar = $valor * $valor2;
         $print = "
         <p>{$valorfinar}<p>
         ";
