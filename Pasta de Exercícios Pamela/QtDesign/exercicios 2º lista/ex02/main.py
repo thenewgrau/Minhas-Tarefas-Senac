@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
-from ex06 import Ui_MainWindow
+from ex02 import Ui_MainWindow
 
 class EditorTexto(QMainWindow):
     def __init__(self):
@@ -8,7 +8,7 @@ class EditorTexto(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        self.ui.pushButton.clicked.connect(self.mostrarNumero)
+        self.ui.pushButton.clicked.connect(self.calculadoraAmbulante)
 
         self.ui.actionNovo.triggered.connect(self.novo_arquivo)
         self.ui.actionAbrir.triggered.connect(self.abrir_arquivo)
@@ -34,18 +34,18 @@ class EditorTexto(QMainWindow):
     def sair(self):
         self.close()
 
-    def mostrarNumero(self):
+    def calculadoraAmbulante(self):
         try:
-            numero = int(self.ui.lineEdit.text())
-            resultado = 1
-            for i in range(1, numero + 1):
-                resultado *= i
-
+            resultado = ""
+            y = int(self.ui.lineEdit.text())
+            for i in range(1,11):
+                h2o = y * i
+                resultado += (f"{y} x {i} = {h2o}\n")
+                
+            self.ui.label_3.setText((resultado))
             self.ui.lineEdit.clear()
-            self.ui.label_2.setText(str(resultado))
-
         except ValueError:
-            self.ui.label.setText("Precisa ter algum número ai né")
+            self.ui.label_3.setText("Precisa ter algum número ai né")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

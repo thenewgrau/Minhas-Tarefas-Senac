@@ -1,0 +1,28 @@
+1. Crie um programa que receba 3 números e informe qual é o maior
+
+2.Crie um programa que receba um número e imprima a tabuada desse número
+
+3.Crie um programa que receba um parametro N e some de 1 até N números.
+
+4.Faça um programa que pergunte quanto você ganha por hora e o número de horas
+trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+
+5. Faça um programa para uma loja de tintas. O programa deve pedir o tamanha em 
+metros quadrados da area a ser pintada. Considere que a cobertura da tinta
+é de 1L para cada 3m² e que cada lata de tinta possui 18L, que custam R$ 18.00. informe
+ao usuario a quantidade de latas e o preço total.
+
+6. Faça um programa que peça o tamanho de um arquivo em MB e a velocidade
+de um link de internet em MBPs, calcule e informe ao usuario o tempo aproximado
+de download em minutos.
+
+7. Faça um programa que leia tres numeros e mostre o maior deles.
+
+8. Faça um programa que leia tres numeros e mostre-os em ordem decrescente.
+
+9. Faça um programa que pergunte em que turno você estuda. Peça para digitar M para
+Matutino, V para Vespertino e N para Noturno. Imprima Bom dia, Boa tarde e boa noite
+conforme o caso.
+
+10. Faça um programa que leia 5 números e informe o maior número, a soma total e a
+média deles.

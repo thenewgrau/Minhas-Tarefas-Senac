@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
-from aguaContaminada import Ui_MainWindow
+from ex05 import Ui_MainWindow
 
 class EditorTexto(QMainWindow):
     def __init__(self):

@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
-from ex06 import Ui_MainWindow
+from ex09 import Ui_MainWindow
 
 class EditorTexto(QMainWindow):
     def __init__(self):
@@ -8,7 +8,7 @@ class EditorTexto(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        self.ui.pushButton.clicked.connect(self.mostrarNumero)
+        self.ui.pushButton.clicked.connect(self.calculadoraAmbulante)
 
         self.ui.actionNovo.triggered.connect(self.novo_arquivo)
         self.ui.actionAbrir.triggered.connect(self.abrir_arquivo)
@@ -34,18 +34,30 @@ class EditorTexto(QMainWindow):
     def sair(self):
         self.close()
 
-    def mostrarNumero(self):
+    def calculadoraAmbulante(self):
         try:
-            numero = int(self.ui.lineEdit.text())
-            resultado = 1
-            for i in range(1, numero + 1):
-                resultado *= i
 
-            self.ui.lineEdit.clear()
-            self.ui.label_2.setText(str(resultado))
+            letraInsana = str(self.ui.lineEdit.text())
+            if letraInsana == "M" or letraInsana == "m":
+                self.ui.label_2.setText("Bom dia")
+                self.ui.lineEdit.clear()
+            elif letraInsana == "V" or letraInsana == "v":
+                self.ui.label_2.setText("Boa tarde")
+                self.ui.lineEdit.clear()
+            elif letraInsana == "N" or letraInsana == "n":
+                self.ui.label_2.setText("Boa noite")
+                self.ui.lineEdit.clear()
+            else:
+                self.ui.label_2.setText("Leia as regras poxa..")
+                self.ui.lineEdit.clear()
 
+
+            
         except ValueError:
-            self.ui.label.setText("Precisa ter algum número ai né")
+            self.ui.label_2.setText("Leia as regras poxa..")
+
+            #to com preguiça de tirar o try e except professora desculpa, eu sei que não tem necessidade, se bem que no tempo que eu digitei isso eu podia ter tirado 
+           
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
-from ex06 import Ui_MainWindow
+from ex10 import Ui_MainWindow
 
 class EditorTexto(QMainWindow):
     def __init__(self):
@@ -8,7 +8,7 @@ class EditorTexto(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        self.ui.pushButton.clicked.connect(self.mostrarNumero)
+        self.ui.pushButton.clicked.connect(self.calculadoraAmbulante)
 
         self.ui.actionNovo.triggered.connect(self.novo_arquivo)
         self.ui.actionAbrir.triggered.connect(self.abrir_arquivo)
@@ -17,6 +17,10 @@ class EditorTexto(QMainWindow):
 
     def novo_arquivo(self):
         self.ui.lineEdit.clear()
+        self.ui.lineEdit_2.clear()
+        self.ui.lineEdit_3.clear()
+        self.ui.lineEdit_4.clear()
+        self.ui.lineEdit_5.clear()
         self.ui.label_2.clear()
 
     def abrir_arquivo(self):
@@ -34,18 +38,24 @@ class EditorTexto(QMainWindow):
     def sair(self):
         self.close()
 
-    def mostrarNumero(self):
+    def calculadoraAmbulante(self):
         try:
-            numero = int(self.ui.lineEdit.text())
-            resultado = 1
-            for i in range(1, numero + 1):
-                resultado *= i
 
-            self.ui.lineEdit.clear()
-            self.ui.label_2.setText(str(resultado))
+            num1 = int(self.ui.lineEdit.text())
+            num2 = int(self.ui.lineEdit_2.text())
+            num3 = int(self.ui.lineEdit_3.text())
+            num4 = int(self.ui.lineEdit_4.text())
+            num5 = int(self.ui.lineEdit_5.text())
+         
+            maior = max(num1, num2, num3, num4, num5)
+            soma = num1 + num2 + num3 + num4 + num5
+            media = (num1 + num2 + num3 + num4 + num5) / 5
 
+            self.ui.label_2.setText(f"Maior: {maior}\nSoma: {soma}\nMédia: {media}")
+            
         except ValueError:
-            self.ui.label.setText("Precisa ter algum número ai né")
+            self.ui.label_2.setText("Leia as regras poxa..")
+           
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
