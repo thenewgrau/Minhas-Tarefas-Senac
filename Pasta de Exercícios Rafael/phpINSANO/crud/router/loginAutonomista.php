@@ -6,7 +6,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     switch($_GET["acao"]){
         case 'validarlogin':
             $resultado = $loginController->ValidarLogin($_POST["nome"],$_POST["senha"]);
-            echo $resultado;
+            if($resultado){
+                header("Location: ../view/home/index.php");
+            }else{
+                header("Location: ../view/index.php");
+            }
             break;
 
         default:
