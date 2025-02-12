@@ -1,6 +1,6 @@
 1. Crie um programa que receba 3 números e informe qual é o maior
 
-2.Crie um programa que receba um número e imprima a tabuada desse número
+2.Crie um programa que receba um número e imprima a tabuada desse número	
 
 3.Crie um programa que receba um parametro N e some de 1 até N números.
 
@@ -26,3 +26,20 @@ conforme o caso.
 
 10. Faça um programa que leia 5 números e informe o maior número, a soma total e a
 média deles.
+
+11. Faça um programa que calcule o valor total investido por um colecionador em sua
+coleção de  CD's. O usuario deve informar a quantidade de CD's e o valor pago em cada um.
+
+12. Faça um programa que calcule o fatorial de um numero inteiro.
+
+13. Faça um programa que leia um vetor de 5 números inteiros e mostre-os
+
+14. Faça um programa que leia um vetor de 10 números reais e mostre-os na ordem inversa.
+
+15. Faça um programa que leia 2 strings e informe o conteudo delas seguido do seu comprimento. Informe também 
+se as duas strings possuem o mesmo comprimento e são iguais ou diferentes no conteúdo.
+
+16. Faça um programa que permita que ao usuario digitar seu nome e em seguida mostre o nome do usuario de trás para frente
+utilizando somente letras maiusculas.
+
+17. Faça um programa que solicite o nome do usuario e imprima-o na vertical.
