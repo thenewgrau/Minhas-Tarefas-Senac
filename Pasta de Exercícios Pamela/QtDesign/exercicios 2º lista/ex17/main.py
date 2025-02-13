@@ -40,10 +40,12 @@ class EditorTexto(QMainWindow):
     def mostrarNumero(self):
         try:
             nomeLindo = str(self.ui.textEdit.toPlainText())
-            self.ui.label_2.setText("nomeLindo")
+            respeito = '\n'.join(nomeLindo)
+                
+            self.ui.label_2.setText(respeito)
 
         except ValueError:
-            self.ui.label_4.setText("Precisa ter algum número ai né") 
+            self.ui.label_2.setText("Precisa ter algum número ai né") 
 
 
 if __name__ == "__main__":
