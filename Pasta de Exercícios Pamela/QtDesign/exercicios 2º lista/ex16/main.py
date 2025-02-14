@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
-from ex17 import Ui_MainWindow
+from ex16 import Ui_MainWindow
 
 class EditorTexto(QMainWindow):
     def __init__(self):
@@ -39,8 +39,9 @@ class EditorTexto(QMainWindow):
     
     def mostrarNumero(self):
         try:
-            nomeLindo = str(self.ui.textEdit.toPlainText())
-            self.ui.label_2.setText("nomeLindo")
+            nomeLindo = str(self.ui.textEdit.toPlainText()).upper()
+            nomeFeio = nomeLindo[::-1]
+            self.ui.label_2.setText(f"Seu nome é: {nomeFeio}")
 
         except ValueError:
             self.ui.label_4.setText("Precisa ter algum número ai né") 

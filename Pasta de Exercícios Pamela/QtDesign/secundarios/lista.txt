@@ -1,0 +1,5 @@
+1. Faça um programa que exiba uma lista de supermercado. Cadastre 10 itens. Deixei um local para o usuário 
+poder esolher qual o produto que deseja comprar e a quantidade. Exiba o valor total a ser pago.
+
+2. Faça um programa que exiba uma lista de 5 músicas com o nome do cantor e o tempo de duração. Peça para o usuário 
+escolher a música e exiba na tela qual música foi escolhida.
