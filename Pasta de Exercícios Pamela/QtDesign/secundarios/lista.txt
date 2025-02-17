@@ -3,3 +3,8 @@ poder esolher qual o produto que deseja comprar e a quantidade. Exiba o valor to
 
 2. Faça um programa que exiba uma lista de 5 músicas com o nome do cantor e o tempo de duração. Peça para o usuário 
 escolher a música e exiba na tela qual música foi escolhida.
+
+3. Faça um programa que exiba que execute um play de uma musica.
+
+4. Faça um programa que exiba uma lista de 5 músicas com o nome do cantor e o tempo de duração. Peça para o usuário 
+escolher a música e use o Play para tocar ela.
