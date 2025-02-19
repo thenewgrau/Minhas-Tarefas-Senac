@@ -7,4 +7,7 @@ escolher a música e exiba na tela qual música foi escolhida.
 3. Faça um programa que exiba que execute um play de uma musica.
 
 4. Faça um programa que exiba uma lista de 5 músicas com o nome do cantor e o tempo de duração. Peça para o usuário 
-escolher a música e use o Play para tocar ela.
+escolher a música e use o Play para tocar ela. 
+
+5. Faça um programa que exibe uma lista de 5 musicas e peça para o usuario digitar qual musica o usuario deseja escutar. 
+O sistema deverá perimitir que o usuário de o play e pare a musica.

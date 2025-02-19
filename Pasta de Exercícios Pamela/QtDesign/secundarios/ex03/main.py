@@ -13,8 +13,10 @@ class EditorTexto(QMainWindow):
         self.ui.setupUi(self)
         
         self.player = QMediaPlayer(self)
+        self.isPaused = False
 
         self.ui.pushButton.clicked.connect(self.tocarMusica)
+        self.ui.pushButton_3.clicked.connect(self.pausarMusica)
         self.ui.pushButton_2.clicked.connect(self.pararMusica)
 
 
@@ -22,15 +24,29 @@ class EditorTexto(QMainWindow):
         caminhoMusica = os.path.join(os.path.dirname(__file__), 'agua.mp3')
         print("Local da música: ", caminhoMusica)
 
-        url = QUrl.fromLocalFile(caminhoMusica)
-
-        if url.isValid():
-            self.player.setMedia(QMediaContent(url))
+        if self.isPaused:
+            self.isPaused = False
             self.player.play()
-            print("Tocando musica...")
+
 
         else:
-            print("Caminho ou arquivo não identificado... ")
+            url = QUrl.fromLocalFile(caminhoMusica)
+        
+            if url.isValid():
+                self.player.setMedia(QMediaContent(url))
+                self.player.play()
+                print("Tocando musica...")
+
+            else:
+                print("Caminho ou arquivo não identificado... ")
+
+    def pausarMusica(self):
+        self.player.pause()
+        self.isPaused = True
+        print("Música Pausada.")
+
+
+
 
     def pararMusica(self):
         self.player.stop()

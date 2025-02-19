@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ex02.ui'
+# Form implementation generated from reading ui file 'ex03.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -40,8 +40,11 @@ class Ui_MainWindow(object):
         self.pushButton.setGeometry(QtCore.QRect(340, 90, 75, 23))
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(340, 220, 75, 23))
+        self.pushButton_2.setGeometry(QtCore.QRect(340, 300, 75, 23))
         self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_3.setGeometry(QtCore.QRect(340, 190, 75, 23))
+        self.pushButton_3.setObjectName("pushButton_3")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
@@ -60,6 +63,7 @@ class Ui_MainWindow(object):
         self.label_6.setText(_translate("MainWindow", "Musicas Legais "))
         self.pushButton.setText(_translate("MainWindow", "Play"))
         self.pushButton_2.setText(_translate("MainWindow", "Parar"))
+        self.pushButton_3.setText(_translate("MainWindow", "Pausar"))
 
 
 if __name__ == "__main__":
