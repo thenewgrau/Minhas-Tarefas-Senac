@@ -18,6 +18,7 @@ class EditorTexto(QMainWindow):
         self.ui.pushButton.clicked.connect(self.tocarMusica)
         self.ui.pushButton_3.clicked.connect(self.pausarMusica)
         self.ui.pushButton_2.clicked.connect(self.pararMusica)
+        self.ui.horizontalSlider.valueChanged.connect(self.controlarVolume)
 
 
     def tocarMusica(self):
@@ -27,7 +28,6 @@ class EditorTexto(QMainWindow):
         if self.isPaused:
             self.isPaused = False
             self.player.play()
-
 
         else:
             url = QUrl.fromLocalFile(caminhoMusica)
@@ -45,14 +45,17 @@ class EditorTexto(QMainWindow):
         self.isPaused = True
         print("Música Pausada.")
 
-
-
-
     def pararMusica(self):
         self.player.stop()
         self.isPaused = False
         print("Música parada.")
 
+    def controlarVolume(self):
+        vol = self.ui.horizontalSlider.value()
+        self.player.setVolume(vol)
+
+        print(f"volume alterado para: {vol}")
+        
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

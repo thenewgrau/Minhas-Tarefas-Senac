@@ -1,0 +1,18 @@
+1. Crie um programa onde um avaliador de um concruso irá cadastrar a quantidade de cada prova de um determinado canditado. 
+O programa deverá recber o cpf do candidato, calcular a nota de cada prova e a média final do candidadto.
+Provas:
+
+- Matemática: 20 questões, 2 pontos cada.
+- Português: 20 questões, 2 pontos cada.
+- Conhecimentos Gerais: 10 questões, 2 pontos cada.
+- Conhecimentos Específicos: 50 questões, 2 pontos cada.
+
+Para calcular a média final:
+
+-   50% = Conhec. Esp.
+-   20% = Português
+-   20% = Matemática
+-   10% = Conhec. Gerais
+
+Salve as notas cadastradas em um arquivo Json.
+
